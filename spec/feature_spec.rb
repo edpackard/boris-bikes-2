@@ -1,7 +1,10 @@
 
 # require_relative '../lib/docking_station'
+
 # docking_station = DockingStation.new
 # p "instantiate a docking station: #{docking_station}"
+# p "dock 20 bikes!: #{20.times {docking_station.dock_bike(Bike.new)}}"
+
 # p "instantiate a bike: #{bike = Bike.new}"
 # p "dock the bike at the docking station: #{docking_station.dock_bike(bike)}"
 # p "see the bike at the docking station: #{docking_station.see_bike}"
