@@ -28,9 +28,9 @@ describe DockingStation do
 
   it "tests that you can't dock a bike if the dock is full" do
     docking_station = DockingStation.new
-    25.times {docking_station.dock_bike(Bike.new)}
+    20.times { docking_station.dock_bike(Bike.new) }
     another_bike = Bike.new
-    expect { subject.dock_bike(another_bike) }.to raise_error "The docking station is full!" 
+    expect { docking_station.dock_bike(another_bike) }.to raise_error "The docking station is full!" 
   end
 
 end
