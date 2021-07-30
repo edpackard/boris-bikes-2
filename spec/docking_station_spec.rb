@@ -32,5 +32,4 @@ describe DockingStation do
     another_bike = Bike.new
     expect { docking_station.dock_bike(another_bike) }.to raise_error "The docking station is full!" 
   end
-
 end
